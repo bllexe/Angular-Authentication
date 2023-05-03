@@ -1,0 +1,7 @@
+Validation eklenecek sifre en az Bir buyuk harf icermelidir.
+
+delete update ,add islemleri yapilmalidir. customer icin
+
+
+
+json-server --watch db.json

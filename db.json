@@ -1,0 +1,146 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "Admin User",
+      "password": "Test$1234",
+      "email": "admin@mail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "test",
+      "name": "test User",
+      "password": "Test$1234",
+      "email": "test@mail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "test2",
+      "name": "test User",
+      "password": "Test$1234",
+      "email": "test2@mail.com",
+      "gender": "male",
+      "role": "qulity",
+      "isactive": true
+    },
+    {
+      "id": "test3",
+      "name": "test User",
+      "password": "Test$1234",
+      "email": "test3@mail.com",
+      "gender": "male",
+      "role": "test",
+      "isactive": true
+    },
+    {
+      "id": "test4",
+      "name": "test User",
+      "password": "Test$1234",
+      "email": "test4@mail.com",
+      "gender": "male",
+      "role": "test",
+      "isactive": true
+    },
+    {
+      "id": "test5",
+      "name": "test User",
+      "password": "Test$1234",
+      "email": "test5@mail.com",
+      "gender": "male",
+      "role": "test",
+      "isactive": true
+    },
+    {
+      "id": "test6",
+      "name": "test User",
+      "password": "Test$1234",
+      "email": "test6@mail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "staff",
+      "name": "Staff"
+    },
+    {
+      "code": "qulity",
+      "name": "Quality"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit":true,
+      "haveadd":true,
+      "havedelete":true
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit":true,
+      "haveadd":true,
+      "havedelete":true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit":false,
+      "haveadd":false,
+      "havedelete":false
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit":true,
+      "haveadd":true,
+      "havedelete":true
+    },
+    {
+      "role": "tech",
+      "menu": "customer",
+      "haveedit":false,
+      "haveadd":true,
+      "havedelete":false
+    }
+  ],
+  "customer":[
+    {
+      "id":1,
+      "name":"bilal",
+      "Creditlimit":1000
+    },
+    {
+      "id":2,
+      "name":"yakut",
+      "Creditlimit":1000
+    },
+    {
+      "id":3,
+      "name":"jennifer",
+      "Creditlimit":1000
+    },
+    {
+      "id":4,
+      "name":"shakir",
+      "Creditlimit":1000
+    }
+  ]
+}

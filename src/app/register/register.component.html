@@ -1,0 +1,44 @@
+<mat-card>
+    <mat-card-header>
+        <h2> User Registeration</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerForm" (ngSubmit)="procedRegisteration()">
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Username*</mat-label>
+              <input matInput formControlName="id" >
+              <mat-error style="margin-bottom: 2px;" *ngIf="!registerForm.get('id')!.valid && registerForm.get('id')!.touched">This field is required</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" >
+                <mat-error style="margin-bottom: 2px;" *ngIf="!registerForm.get('name')!.valid && registerForm.get('name')!.touched">This field is required</mat-error>
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Password*</mat-label>
+                <input type="password" matInput formControlName="password" >
+                <mat-error style="margin-bottom: 2px;" *ngIf="!registerForm.get('password')!.valid && registerForm.get('password')!.touched">This field is required</mat-error>
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                <mat-label>Email*</mat-label>
+                <input matInput formControlName="email" >
+                <mat-error style="margin-bottom: 2px;" *ngIf="!registerForm.get('email')!.valid && registerForm.get('email')!.touched">This field is required</mat-error>
+              </mat-form-field>
+
+              <mat-radio-group formControlName="gender" aria-label="Select an option">
+                <mat-radio-button value="male">Male</mat-radio-button>
+                <mat-radio-button value="female">Female</mat-radio-button>
+                <mat-error style="margin-bottom: 2px;" *ngIf="!registerForm.get('gender')!.valid && registerForm.get('gender')!.touched">This field is required</mat-error>
+              </mat-radio-group>
+              <div>
+                <button mat-raised-button color="primary">Submit</button>
+                <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+              </div>
+          </form>
+    </mat-card-content>
+</mat-card>
+
